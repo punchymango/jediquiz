@@ -1,0 +1,21 @@
+{   
+    "title" : "Jedi Quiz",
+    "questions" : [ 
+    {"prompt" : "Which of these most appeals to you?",
+    "answers" : [{"answer" : "Glory", "value" : "dark"}, {"answer" : "Peace", "value" : "light"}, {"answer" : "Strength", "value" : "dark"}, {"answer" : "Knowledge", "value" : "light"}]},
+    {"prompt": "There is a sealed door between you and your goal. How do you proceed?",
+    "answers" : [{"answer" : "Smash it down", "value" : "force"}, {"answer" : "Slice the controls", "value" : "stealth"}, {"answer" : "Knock", "value" : "words"}]},
+    {"prompt": "It's a dangerous galaxy. What do you rely on to keep you safe?",
+    "answers" : [{"answer" : "My lightsaber", "value" : "force"}, {"answer" : "My fearsome reputation", "value" : "dark"}, {"answer" : "My way with words", "value" : "words"}, {"answer" : "Knowledge and foresight", "value" : "light"}, {"answer" : "My talent for remaining unseen", "value" : "stealth"}]},
+    {"prompt": "You are aboard a starship, and the order is given to evacuate. You see a crew member pinned beneath fallen heavy objects. What do you do?",
+    "answers" : [{"answer" : "Leave him. It's everyone for themselves!", "value" : "dark"}, {"answer" : "Help him. It's the right thing to do.", "value" : "light"}, {"answer" : "Extract a promise of payment or service if I save him.", "value" : "dark"}]},
+    {"prompt": "A war breaks out between your home planet and another world. What do you do?",
+    "answers" : [{"answer" : "Let the conflict rage, and seek ways to amass fortune and power amidst the chaos", "value" : "dark"}, {"answer" : "Seek a peaceful solution to the conflict", "value" : "light"}, {"answer" : "Make the enemy pay for messing with your home", "value" : "dark"}, {"answer" : "Seek a decisive victory to quickly end the conflict", "value" : "light"}]},
+    {"prompt": "Which of these traits is most important?",
+    "answers" : [{"answer" : "Selflessness", "value" : "light"}, {"answer" : "Power", "value" : "dark"}, {"answer" : "Justice", "value" : "light"}, {"answer" : "Wisdom", "value" : "light"}, {"answer" : "Ambition", "value" : "dark"}, {"answer" : "Passion", "value" : "dark"}]},
+    {"prompt": "Which of these statements do you agree with most strongly?",
+    "answers" : [{"answer" : "Much conflict and pain could be avoided if people were willing to speak, and listen.", "value" : "words"}, {"answer" : "Words and subterfuge may fail, but strength and conviction can change the universe", "value" : "force"}, {"answer" : "If knowledge is power, remain unknown and you will never be bested", "value" : "stealth"}]},
+    {"prompt" : "You are fighting your worst enemy, and you gain the upper hand. They yield and ask for mercy. What do you do?",
+    "answers" : [{"answer" : "Kill them. Mercy is for the weak.", "value" : "dark"}, {"answer" : "Accept their surrender, but bring them to justice.", "value" : "light"}, {"answer" : "Let them live on the condition that they serve you from now on.", "value" : "dark"}, {"answer" : "Accept their surrender. You would never strike down a defenseless opponent.", "value" : "light"}]}
+    ]
+}

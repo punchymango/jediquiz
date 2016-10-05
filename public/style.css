@@ -1,0 +1,81 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+body {
+  background-color:black;
+  background: url(https://cdn.hyperdev.com/us-east-1%3A39d8f319-63a5-4192-afb4-6324f2c1b211%2Fstars-1246590.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Copperplate Gothic Light', fantasy;
+}
+
+h1 {
+  color:white;
+  text-align:center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.fixed {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style:none;
+}
+
+li {
+  margin: 25px 25px;
+  font-size: 1.4em;
+  border-bottom: solid white 2px;
+}
+
+label:hover {
+  text-decoration:underline;
+}
+
+label:active {
+  background-color: azure;
+}
+
+.output {
+  height: 400px;
+  width: auto;
+  overflow:hidden;
+  position: relative;
+  border-radius: 5px;
+  background-color:white;
+}
+
+.buttons {
+  position:relative;
+  top: 125px;
+  margin: 0 auto;
+}
+
+button {
+  height: 50px;
+  width: 125px;
+  background-color: skyblue;
+  border:none;
+  box-shadow: 1px 1px 2px white;
+  margin: 0 25px 0 0;
+  border-radius: 10px;
+  font-size:1.5em;
+}
+
+button:focus {
+  outline:none;
+}
+button:hover {
+  background-color:azure;
+}
+button:active {
+  box-shadow: none;
+  background-color:ivory;
+}
