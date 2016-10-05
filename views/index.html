@@ -27,15 +27,16 @@
 
     <main>
       <div class = "fixed">
-
+        <div class = "buttons">
+          <button id = "backwards" onclick = "quiz.getQuestion('backward')">Back</button><button id = "forward" onclick = "quiz.getQuestion('forward')">Next</button>
+        </div>
+        
         <div class = "output">
           <h2>Click to begin</h2>
           <ul id="answers">
           </ul>
         </div>
-        <div class = "buttons">
-          <button id = "backwards" onclick = "quiz.getQuestion('backward')">Back</button><button id = "forward" onclick = "quiz.getQuestion('forward')">Next</button>
-        </div>
+
       </div>
     </main>
 
