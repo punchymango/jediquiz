@@ -142,29 +142,50 @@ var display = {
     output.textContent = result;
   },
   
+  // displayAnswers : function(question) {
+  //   var answerList = document.getElementById('answers');
+  //   question.answers.forEach(function(answerObject) {
+  //     var response = answerObject.answer;
+  //     var newLabel = document.createElement('label');
+  //     var newText = document.createTextNode(response);
+  //     var newLi = document.createElement('li');
+  //     var newRadioButton = document.createElement('input');
+  //     newRadioButton.setAttribute('type', 'radio');
+  //     newRadioButton.setAttribute('value', answerObject.value);
+  //     newRadioButton.setAttribute('name', 'responses');
+  //     newRadioButton.setAttribute('id', question.answers.indexOf(answerObject));
+  //     newLabel.appendChild(newRadioButton);
+  //     newLabel.appendChild(newText);
+  //     newLi.appendChild(newLabel);
+  //     answerList.appendChild(newLi);
+  //   });
+  // },
+  
   displayAnswers : function(question) {
     var answerList = document.getElementById('answers');
     question.answers.forEach(function(answerObject) {
-      var response = answerObject.answer;
-      var newLabel = document.createElement('label');
-      var newText = document.createTextNode(response);
-      var newLi = document.createElement('li');
-      var newRadioButton = document.createElement('input');
-      newRadioButton.setAttribute('type', 'radio');
-      newRadioButton.setAttribute('value', answerObject.value);
-      newRadioButton.setAttribute('name', 'responses');
-      newRadioButton.setAttribute('id', question.answers.indexOf(answerObject));
-      newLabel.appendChild(newRadioButton);
-      newLabel.appendChild(newText);
-      newLi.appendChild(newLabel);
-      answerList.appendChild(newLi);
+    var response = answerObject.answer;
+    var newDiv = document.createElement('div');
+    var newLabel = document.createElement('label');
+    var newRadio = document.createElement('input');
+    var newText = document.createTextNode(response);
+    var outerSpan = document.createElement('span');
+    var innerSpan = document.createElement('span');
+    newRadio.setAttribute('type', 'radio'), newRadio.setAttribute('name', 'responses'), newRadio.setAttribute('id', question.answers.indexOf(answerObject)), newRadio.setAttribute('value', answerObject.value);
+    newLabel.setAttribute('for', question.answers.indexOf(answerObject));
+    outerSpan.appendChild(innerSpan);
+    newLabel.appendChild(outerSpan);
+    newLabel.appendChild(newText);
+    newDiv.appendChild(newRadio), newDiv.appendChild(newLabel);
+    answerList.appendChild(newDiv);
     });
+
   },
   
   destroyAnswers : function() {
     var answerList = document.getElementById('answers');
     do {
-      if (answerList.lastChild.nodeName === 'LI') {
+      if (answerList.lastChild.nodeName === 'DIV') {
         answerList.removeChild(answerList.lastChild);
     } 
     } while (answerList.children.length > 0);
